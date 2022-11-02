@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background:black;
+}
+body a{
+    text-decoration: none;
+}
+#navbar a{
+    font-family: 'Quicksand';
+    font-size: 18px;
+    padding-right: 5px;
+}
+
+/* #home{
+
+    position: relative;
+    width: 100%
+    height: 100vh;
+} */
+
+
+nav{
+    display: flex;
+    margin-left: 41px;
+    padding: 10px 0;
+    align-items:flex-start;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    
+}
+
+.partician{
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    background-color: antiquewhite;
+}
+nav ul li a{
+    color: antiquewhite;
+    text-align: right;
+    font-weight: bold;
+    font-size: 27px;
+    
+}
+nav ul li a:hover{
+    color: #000000;
+    background: #63d3e0;
+    box-shadow: 0 0 50px #63d3e0;
+
+
+}
+.one{
+    width: 40%;
+    color: rgb(255, 255, 255);
+    margin-left: 126px;
+    margin-top: 150px;
+    font-size: 40px;
+}
+
+.one h1{
+    font-family: 'Quicksand', cursive;
+    /* margin-top:71px; */
+}
+.one h2{
+    width:80%;
+    color: cadetblue;
+    font-size: 35px;
+    /* margin-top: 20px; */
+    font-family: cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.one .span{
+    color: orange;
+    animation-name: example;
+  animation-duration: 4s;
+  margin: 10px 0px;
+}
+
+@keyframes example {
+  from {color: rgb(0, 217, 255);}
+  to {color: yellow;}
+}
+.one p{
+    font-size: 25px;
+    color: #555;
+    margin-top: 25px
+}
+
+.two{
+    margin-top: 30px;
+}
+
+
+
+.images{
+    right:100px;
+    border-radius: 50px;
+    margin-top: 159px;
+    
+}
+
+.pic{
+    width: 300px;
+    height: 300px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-left: 250px;
+}
+.images img:hover
+{
+    border: 5px solid rgb(235, 71, 71);
+    /* transform:matrix3d(0.5); */
+    color: #000000;
+    background: #00fcda;
+    box-shadow: 0 0 500px #ffffff;
+    transform:translate3d(0.5);
+}
+.logo{
+    
+    height: 60px;
+
+}
+
+.icon{
+    /* position: fixed; */
+    /* z-index: 10000; */
+    position: absolute;
+    right: 15px;
+    border: 2px solid white;
+    border-radius: 50px;
+    top: 160px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 120px;
+}   
+.icon div img {
+    height:40px;
+    width: 40px;
+    border-radius: 45px;
+    margin-bottom: 10px;
+}
+.icon div img:hover{
+    transform: scaleX(0.3);
+}
+
+/* portfolio section */
+#portfolio
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 51px;
+}
+ .heading span{
+    font-size: 30px;
+    font-family:cursive;
+    color: hsl(0, 0%, 0%);
+    border: 10px solid white;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+};
+   
+    
+
+.gallery{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    
+}
+.gallery img:hover
+{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+.gallery img{
+    margin-top: 10px;
+    width:300px;
+    height:340px;
+    padding: 30px;
+    margin:10px;
+    margin-left: 95px;
+    border:5px solid white;
+    border-radius: 10px;
+    margin-bottom: 54px;
+    
+}
+
+/* education  */
+
+#education
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+#education span
+{
+    color: #000000;
+    border: 10px solid white;
+    background-color: white;
+}
+
+.columns{
+    /* color: rgb(243, 206, 206); */
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin:30px;
+}
+.tenth
+{
+    width: 90%;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 25px; 
+    border: 2px solid white;
+    border-radius: 13px;
+    background-color: rgb(255, 255, 255,0.1);
+}
+.tenth h2{
+    margin-bottom: 0px;
+    color: yellow;
+    /* border-radius: 30px; */
+    background-color:rgb(255, 255, 255,0.1);
+    padding: 10px;
+}
+.tenth p{
+    font-size:24px;
+    background-color: rgb(255, 255, 255,0.1);
+    color: #db6666;
+    height:200px;
+    font-family:cursive;
+    padding: 10px;
+}
+
+.twelveth{
+    width:90%;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border: 2px solid white;
+    border-radius: 13px;background-color: rgb(255, 255, 255,0.1);
+}
+
+.twelveth h2{
+    margin-bottom: 0px;
+    color: yellow;
+    background-color:rgb(255, 255, 255,0.1);
+    padding: 10px;
+    /* border-radius: 30px; */
+    border-radius: 0;
+}
+.twelveth p{
+    background-color:rgb(255, 255, 255,0.1);
+    font-size:24px;
+    height:200px;
+    color: #db6666;
+    padding: 10px;
+    font-family: cursive;
+}
+
+.college{
+    width:90%;
+    margin-left: 25px;
+    margin-top: 50px;
+    margin-right: 10px;
+    border: 2px solid white;
+    border-radius: 13px;background-color: rgb(255, 255, 255,0.1);
+    position: relative;
+    left: 50%;
+    
+}
+
+.college h2{
+    margin-bottom: 0px;
+    color: yellow;
+    /* border-radius: 30px; */
+    background-color: rgb(255, 255, 255,0.1);
+    padding: 10px;
+}
+
+.college p{
+    background-color:rgb(255, 255, 255,0.1);
+    font-size:24px;
+    height:200px;
+    color: #db6666;
+    padding: 10px;
+    font-family: cursive;
+    
+}
+
+
+/* about section */
+
+
+
+#about{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+}
+#about span
+{
+    color: #000000;
+    border: 10px solid white;
+    background-color: white;
+}
+ .column{
+     display: flex;
+     flex-direction: row;
+ }
+
+
+
+
+.about img{
+    width:503px;
+    height:515px;
+    padding: 10px;
+    margin-left: 25px;
+    padding-right: 20px;
+    opacity: 0.8;
+}
+#p
+{
+    border: 5px solid white;
+    padding: 1px;
+    border-radius: 10px;
+}
+.name{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.name h2{
+    padding-bottom:17px;
+    font-style: oblique;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-family: 'Quicksand';
+    margin-left: 10px;
+}
+.name p{
+    font-size: 24px;
+    font-family: cursive;
+    color: #db6666;
+    margin-left: 17px;
+}
+
+.interest{
+    margin-top: 10px;
+}
+
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+#contact span{
+    color: #000000;
+    border: 10px solid white;
+    background-color: white;
+    /* margin-bottom: 10px; */
+}
+.form{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+input[type = "text"] 
+{
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    font-family: cursive;
+
+    background-color: #d6f6fa;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+    }
+
+input[type = "email"] 
+{
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    background-color: #d6f7fa;
+    font-family: cursive;
+}
+input[type=email]:focus {
+    background-color: lightblue;
+    }
+    
+
+textarea{
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    background-color: #d8f2f5;
+    font-family: cursive;
+}
+textarea:focus {
+    background-color: lightblue;
+    }
+
+input[type = "submit"] 
+{
+    width: 20%;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background-color: #efe4e4;
+    border-radius: 15px;
+    font-family: cursive;
+}
+#submit:hover{
+    background-color: #63d3e0;
+
+}
+
+
+/* footer */
+
+.footer{
+    /* width: 100%; */
+    border: 3px solid rgb(0, 0, 0);
+    /* border-radius: 10px; */
+    margin-top: 20px;
+   
+}
+.footer p{
+    color: white;
+    text-align: center;
+    background-color: #555;
+    padding: 8px;
+    font-size: 20px;
+    font-family:'Quicksand' ;
+}
+.footer span{
+    color: yellow;
+    background-color: #555;;
+}
